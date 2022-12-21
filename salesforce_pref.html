@@ -1094,9 +1094,6 @@
             SET @SubscriberKey = [_subscriberkey]
             SET @EmailAddress = [emailaddr]
 
-            /*SET @SubscriberKey = "100000213"
-            SET @EmailAddress = "mbolton.10000.0213@hotmail.marketingclouddemo.com"*/
-
             IF EMPTY(@SubscriberKey) OR EMPTY(@EmailAddress) THEN
 
                 SET @error = true
@@ -1107,8 +1104,8 @@
                 THE FORM
                 */
 
-                SET @thankYouLink = CloudPagesURL(44375)
-                SET @unsubAll = CloudPagesURL(44609)
+                SET @thankYouLink = CloudPagesURL(3608)
+                SET @unsubAll = CloudPagesURL(3608)
 
                 IF Length(@EmailAddress) > 0 THEN
                     /*The following code will lookup an existing contact automatically if you wire this up to a "complete your profile" email as part of your customer journey */
